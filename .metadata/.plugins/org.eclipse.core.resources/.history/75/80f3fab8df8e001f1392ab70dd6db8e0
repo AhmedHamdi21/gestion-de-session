@@ -1,0 +1,27 @@
+package com.ams.Exercise;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+
+public class sessionController {
+	@RequestMapping("list") 
+	public String listSession(Model model) {
+		String ses3 = "OCA";
+		String ses1 = "OCP";
+		String ses2 = "FullStack";
+		return "la liste des sessions";
+
+}
+	@RequestMapping("add") 
+	public String addtSession(Model model,@RequestParam("nom") String nom) {
+		String ses3 = "OCA";
+		String ses1 = "OCP";
+		String ses2 = "FullStack";
+		return "ajout dans la  liste des sessions";
+
+}
+}

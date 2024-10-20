@@ -1,0 +1,8 @@
+<h1>ajout d une session</h1>
+formulaire d ajout
+<form method="post" th:action="@{/addSession}">
+	nom de session:<input type="text" name="ses"/>
+	description:<input type="text" name="desc"/>
+	
+	<input type="submit" value="envoyer"/>
+</form>

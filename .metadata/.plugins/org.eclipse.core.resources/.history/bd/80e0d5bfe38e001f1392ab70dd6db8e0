@@ -1,0 +1,26 @@
+package com.ams.Exercise;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+public class sessionController {
+	@RequestMapping("listsession") 
+	public String listSession(Model model) {
+		Session ses1 = new Session("OCA","description","images.jpeg" );
+		Session ses2 = new Session("OCA","description","images.jpeg" );
+		Session ses3 = new Session("OCA","description","images.jpeg" );
+		model.addAttribute("ses1",ses1);
+		model.addAttribute("ses2",ses2);
+		model.addAttribute("ses3",ses3);
+		return "listeSession";
+
+}
+	@RequestMapping("addsession") 
+	public String addtSession(Model model,@RequestParam("nom") String nom) {
+		return "ajout une liste des sessions";
+
+}
+}

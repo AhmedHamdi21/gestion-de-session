@@ -1,0 +1,14 @@
+package com.sip.ams.controllers;
+
+public class EtudiantContoller {
+	public String listEtudiants() 
+	{
+		return "liste des stagiaires ";
+	}
+	public String AddEtudiants() 
+	{
+		return "ajout dun etudiant";
+	}
+
+
+}

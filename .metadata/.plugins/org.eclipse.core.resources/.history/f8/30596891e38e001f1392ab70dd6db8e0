@@ -1,0 +1,16 @@
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<img th:src="@{/images/images.jpeg}"/>
+<h1>liste des sessions</h1>
+<br/>
+Formation1:<span th:text="${ses1.nom}"></span>
+<br/><span th:text="${ses1.desc}"></span>
+<img th:src="@{/images/${ses1.img}}"/>
+<br/>
+Formation2 :<span th:text="${ses2.nom}"></span>
+<br/><span th:text="${ses2.desc}"></span>
+<img th:src="@{/images/${ses2.img}}"/>
+<br/>
+Formation3 :<span th:text="${ses3.nom}"></span>
+<span th:text="${ses3.desc}"></span>
+<img th:src="@{/images/${ses3.img}}"/>
+<br/>

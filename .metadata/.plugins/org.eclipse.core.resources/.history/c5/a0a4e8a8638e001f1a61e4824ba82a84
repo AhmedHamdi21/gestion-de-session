@@ -1,0 +1,5 @@
+<h1>liste des stagiaires</h1>
+ahmed hamdi
+<br/>
+le nombre totale des inscrit:<span th:text="${totalStudent}"></span>
+the trainer is :<span th:text="${trainerStudent}"></span>

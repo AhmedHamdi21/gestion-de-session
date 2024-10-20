@@ -1,0 +1,8 @@
+<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+<img src="@{/images/images.jpeg}"
+<h1>liste des stagiaires</h1>
+ahmed hamdi
+<br/>
+le nombre totale des inscrit:<span th:text="${totalStudent}"></span>
+<br/>
+le formateur est :<span th:text="${trainerStudent}"></span>
